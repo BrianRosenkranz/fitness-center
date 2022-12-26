@@ -11,8 +11,45 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <nav>
+            <a href="index.html#home" aria-label="Go to the top of the page">Home</a>
+            <a href="index.html#info" aria-label="Go to the information section">Information</a>
+            <a href="index.html#our-team" aria-label="Go to the know the team section">Our Team</a>
+            <a href="index.html#contact" aria-label="Go to the contact information section">Contact</a>
+        </nav>
+        <h1>Get in touch with our team</h1>
     </header>
-    
+    <body>
+        <form action="https://formdump.codeinstitute.net" method="post">
+            <label for="reason">Reason</label><br>
+            <select id="reason" name="reason">
+                <option></option>
+                <option value="feedback">Feedback</option>
+                <option value="book-an-appointment">Book an appointment</option>
+                <option value="more-information">For more information</option>
+            </select>
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Your first name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" requiered>
+                <label for="number">Telephone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="Your telephone number">
+            </fieldset>
+            <fieldset>
+                <legend>When is better to reach you?</legend>
+                <label for="time">The best time through the day</label>
+                <input name="time" id="time" list="time-list"><span>or</span> <input type="datetime-local">
+                <datalist id="time-list">
+                    <option value="Morning"></option>
+                    <option value="Lunch"></option>
+                    <option value="Afternoon"></option>
+                </datalist>
+            </fieldset>
+        </form>
+    </body>
 </body>
 </html>
