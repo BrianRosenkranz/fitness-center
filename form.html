@@ -7,22 +7,25 @@
     <meta name="description" content="Online webpage of Fitness Center Carrillo">
     <!--complete meta keywords-->
     <meta name="author" content="Fitness Center Carrillo">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Fitness Center Carrillo</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="text-align-right">
+         <nav>
             <a href="index.html#home" aria-label="Go to the top of the page">Home</a>
             <a href="index.html#info" aria-label="Go to the information section">Information</a>
-            <a href="index.html#our-team" aria-label="Go to the know the team section">Our Team</a>
+            <a href="our-team.html#our-team" aria-label="Go to the know the team section">Our Team</a>
             <a href="index.html#contact" aria-label="Go to the contact information section">Contact</a>
-        </nav>
+         </nav>
+        </div>
         <h1>Get in touch with our team</h1>
     </header>
     <body>
         <form action="https://formdump.codeinstitute.net" method="post">
             <label for="reason">Reason</label><br>
-            <select id="reason" name="reason">
+            <select id="reason" name="reason" required>
                 <option></option>
                 <option value="feedback">Feedback</option>
                 <option value="book-an-appointment">Book an appointment</option>
@@ -37,19 +40,35 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" requiered>
                 <label for="number">Telephone Number:</label>
-                <input type="tel" id="number" name="number" placeholder="Your telephone number">
+                <input type="tel" id="number" name="number" placeholder="Your telephone number" required>
             </fieldset>
             <fieldset>
                 <legend>When is better to reach you?</legend>
                 <label for="time">The best time through the day</label>
-                <input name="time" id="time" list="time-list"><span>or</span> <input type="datetime-local">
+                <input name="time" id="time" list="time-list" required>
                 <datalist id="time-list">
                     <option value="Morning"></option>
                     <option value="Lunch"></option>
                     <option value="Afternoon"></option>
                 </datalist>
             </fieldset>
+            <fieldset>
+                <legend>Your message</legend>
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="50" rows="10" placeholder="Please write a small message explaining your reason." required></textarea>
+            </fieldset>
+            <label for="submit"></label>
+            <input type="submit" name="submit" id="submit" value="Send message">
+            <label for="reset"></label>
+            <input type="reset" name="reset" id="reset" value="Reset">
         </form>
+        <footer>
+            <span>Find us on:</span>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+            <p>Copyright © Fitness Center Carrillo 2022</p>
+        </footer>
     </body>
 </body>
-</html>
+</html> 

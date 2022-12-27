@@ -1,0 +1,25 @@
+body {
+    background-color: #F2F1E7;
+    color: #154A02;
+    margin: 0;
+}
+.text-align-right {
+    text-align: right;
+}
+div > nav > a {
+background-color: #154A02;
+color: #F2F1E7;
+text-transform: capitalize;
+text-decoration: none;
+border: 3px outset;
+border-radius: 5%;
+width: 20%;
+}
+.text-align-center {
+    text-align: center;
+    margin: 0;
+}
+
+#bg-img {
+    background url('assets/img/pexels-max-vakhtbovych-7031709.jpg'); center center / cover no-repeat;
+}
