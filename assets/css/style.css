@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Life+Savers:wght@400;700;800&family=Open+Sans:wght@300&display=swap');
+/* 
+font-family: 'Bellota Text', cursive;
+font-family: 'Life Savers', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
 body {
-    background-color: #F2F1E7;
+    font-family: 'Open Sans', Aria ,sans-serif;
+    background-color: white;
     color: #154A02;
     margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Bellota Text', cursive;
 }
 .text-align-right {
     text-align: right;
@@ -12,14 +22,61 @@ color: #F2F1E7;
 text-transform: capitalize;
 text-decoration: none;
 border: 3px outset;
-border-radius: 5%;
+border-radius: 10px;
 width: 20%;
 }
 .text-align-center {
     text-align: center;
-    margin: 0;
+    margin: 5rem 0;
+    color: black;
+}
+.page-header{
+        height: 50vh;
+        background: url('https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') 50% 50% / 100% no-repeat;
+}
+.health {
+    text-align: center;
+}
+.width-div {
+  display: flex;
+  justify-content: space-between;
+}
+.box-left {
+    flex: 1;
+   margin: 5%;
+   padding: 0 12.5rem 0;
+}
+.box-middle {
+    flex: 1;
+    margin: 5%;
+}
+#faci {
+    background: white url('https://images.pexels.com/photos/8028620/pexels-photo-8028620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center no-repeat;
+    width: fit-content;padding: 15rem;
+}
+.list {
+    text-align: center;
+    color: white;
 }
 
-#bg-img {
-    background url('assets/img/pexels-max-vakhtbovych-7031709.jpg'); center center / cover no-repeat;
+li {
+    list-style-type: none;   
+}
+.box-right {
+   flex: 1;
+   margin: 5%;
+   padding: 0 12.5rem 0;
+}
+#servi {
+    background: white url('https://images.pexels.com/photos/6740302/pexels-photo-6740302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center /100% 100% no-repeat;
+    width: fit-content;padding: 15rem;
+}
+#break {
+    clear: left;
+}
+footer {
+    background-color: darkgray;
+    text-align: center;
+    height: 200px;
+    width: 100%;
 }
