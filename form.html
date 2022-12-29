@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,108 @@
     <!--complete meta keywords-->
     <meta name="author" content="Fitness Center Carrillo">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fitness Center Carrillo</title>
 </head>
-<body>
-    <header class="page-header">
-        <div class="text-align-right">
-         <nav>
-            <a href="index.html#home" aria-label="Go to the top of the page">Home</a>
-            <a href="index.html#info" aria-label="Go to the information section">Information</a>
-            <a href="our-team.html#our-team" aria-label="Go to the know the team section">Our Team</a>
-            <a href="index.html#contact" aria-label="Go to the contact information section">Contact</a>
-         </nav>
-        </div>
+
+<body class="grid-container-form home-background">
+    <header class="header">
         <div class="text-align-center">
-         <h1>Get in touch with our team</h1>
+            <h1>Fitness Center Carrillo</h1>
+            <p id="h1-p">A place to exercise, to be healthy and to relax</p>
         </div>
     </header>
-    <body>
-        <form action="https://formdump.codeinstitute.net" method="post">
-            <label for="reason">Reason</label><br>
-            <select id="reason" name="reason" required>
-                <option></option>
-                <option value="feedback">Feedback</option>
-                <option value="book-an-appointment">Book an appointment</option>
-                <option value="more-information">For more information</option>
-            </select>
-            <fieldset>
-                <legend>Your Details:</legend>
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
-                <label for="first-name">First Name:</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Your first name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" requiered>
-                <label for="number">Telephone Number:</label>
-                <input type="tel" id="number" name="number" placeholder="Your telephone number" required>
-            </fieldset>
-            <fieldset>
-                <legend>When is better to reach you?</legend>
-                <label for="time">The best time through the day</label>
-                <input name="time" id="time" list="time-list" required>
-                <datalist id="time-list">
-                    <option value="Morning"></option>
-                    <option value="Lunch"></option>
-                    <option value="Afternoon"></option>
-                </datalist>
-            </fieldset>
-            <fieldset>
-                <legend>Your message</legend>
-                <label for="message"></label>
-                <textarea name="message" id="message" cols="50" rows="10" placeholder="Please write a small message explaining your reason." required></textarea>
-            </fieldset>
-            <label for="submit"></label>
-            <input type="submit" name="submit" id="submit" value="Send message">
-            <label for="reset"></label>
-            <input type="reset" name="reset" id="reset" value="Reset">
-        </form>
-        <footer>
-            <span>Find us on:</span>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
-            <p>Copyright © Fitness Center Carrillo 2022</p>
-        </footer>
-    </body>
+    <nav class="nav">
+        <a href="index.html#home" aria-label="Go to the top of the page">HOME <span class="material-symbols-outlined"> home
+            </span></a>
+        <a href="index.html#info" aria-label="Go to the information section">info <span
+                class="material-symbols-outlined"> info </span></a>
+        <a href="our-team.html#our-team" aria-label="Go to the know the team section">Our Team <span
+                class="material-symbols-outlined"> groups </span></a>
+        <a href="#contact" aria-label="Go to the contact information section">Contact
+            <span class="material-symbols-outlined"> contact_support </span></a>
+    </nav>
+    <section class="form">
+        <div id="form-style">
+            <form action="https://formdump.codeinstitute.net" method="post">
+                <label for="reason">Reason</label><br>
+                <select id="reason" name="reason" required>
+                    <option></option>
+                    <option value="feedback">Feedback</option>
+                    <option value="book-an-appointment">Book an appointment</option>
+                    <option value="more-information">For more information</option>
+                </select>
+                <fieldset>
+                    <legend>Your Details:</legend>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your first name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" requiered>
+                    <label for="number">Telephone Number:</label>
+                    <input type="tel" id="number" name="number" placeholder="Your telephone number" required>
+                </fieldset>
+                <fieldset>
+                    <legend>When is better to reach you?</legend>
+                    <label for="time">The best time through the day</label>
+                    <input name="time" id="time" list="time-list" required>
+                    <datalist id="time-list">
+                        <option value="Morning"></option>
+                        <option value="Lunch"></option>
+                        <option value="Afternoon"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Your message</legend>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="50" rows="10"
+                        placeholder="Please write a small message explaining your reason." required></textarea>
+                </fieldset>
+                <label for="submit"></label>
+                <input type="submit" name="submit" id="submit" value="Send message">
+                <label for="reset"></label>
+                <input type="reset" name="reset" id="reset" value="Reset">
+            </form>
+        </div>
+    </section>
+    <section class="contact container-contact text-center">
+        <h2 id="contact" class="text-center">Contact information:</h2>
+        <div class="get-in-touch">
+            <h3>Get in touch</h3>
+            <p>Phone number: +506 2656-0101</p>
+        </div>
+        <div class="schedule">
+            <h3>Schedule</h3>
+            <p>
+                The gym is 24h the 7 days of the week.<br>And the other facilities
+                from Monday-Friday from 07:00 am to 07:00 pm
+            </p>
+        </div>
+        <div class="address">
+            <h3>Address</h3>
+            <p>Fitness Center Carrillo,<br>Guanacaste,<br>Costa Rica</p>
+        </div>
+        <div class="map">
+            <iframe title="Map to Fitness Center"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1075.6668988284966!2d-85.46319427194591!3d9.873196408300146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sde!4v1672063438857!5m2!1ses!2sde"
+                width="400px" height="40opx" alt="Map to Fitness Center Carrillo"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>Find us on:</div>
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+            aria-label="Find us on Facebook (link opens in a new tab)" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"
+            aria-label="Find us on Instagram (link opens in a new tab)" class="fa fa-instagram"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener"
+            aria-label="Find us on Twitter (link opens in a new tab)" class="fa fa-twitter"></a>
+
+        <p>Copyright © Fitness Center Carrillo 2022</p>
+    </footer>
 </body>
-</html> 
+
+</html>
