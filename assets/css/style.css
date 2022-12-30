@@ -13,7 +13,33 @@ font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
-/* Style the header */
+#the-top {
+    z-index: 4;
+    background: black;
+    color: white;
+    width: 3%;
+    height: 4%;
+    border-radius: 100%;
+    position: fixed;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0px 5px 0px 0px;
+    right: 2%;
+    bottom: 15%;
+}
+#the-top:hover {
+    z-index: 4;
+    background: black;
+    color: white;
+    width: 3%;
+    height: 4%;
+    border-radius: 100%;
+    position: fixed;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.2%;
+    right: 2%;
+}
 .header {
     grid-area: header;
     background-color: #f1f1f1;
@@ -30,9 +56,10 @@ font-family: 'Open Sans', sans-serif;
     grid-template-areas:
         'header header header header header header'
         'nav nav nav nav nav nav'
-        'left left left right right right'
+        'left left middle middle right right'
         'select1 select1 select1 select3 select3 select3'
         'contact contact contact contact contact contact'
+        'map map map map map map'
         'footer footer footer footer footer footer';
     /* grid-column-gap: 10px; - if you want gap between the columns */
 }
@@ -43,7 +70,18 @@ font-family: 'Open Sans', sans-serif;
         'nav nav nav nav nav nav'
         'form form form form form form'
         'contact contact contact contact contact contact'
+        'map map map map map map'
         'footer footer footer footer footer footer';}
+.grid-container-gallery {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+       'gallery gallery gallery gallery gallery gallery'
+        'contact contact contact contact contact contact'
+        'map map map map map map'
+        'footer footer footer footer footer footer';
+}
 
 .home-background {
     background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat; 
@@ -51,7 +89,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .form {
     grid-area: form;
-    background-color: ##5979653d;
+    background-color: #5979653d;
 }
 #form-style {
     height: 50vh;
@@ -59,18 +97,34 @@ font-family: 'Open Sans', sans-serif;
 	padding: 25px;
 	border-radius: 8px;
 	margin: 25px auto;
-    background-color: #daecff69;
+    background-color: #384a3ea3;
 }
 .left {
     grid-area: left;
-    
-    height: 300px;
+    background-color: #5979653d;
+    height: 41vh;
     padding: 10px;
-    background-size: 68vw 116vh;
+    width: 33.3vw;
+   
 }
-
+.middle {
+    grid-area: middle;
+    background-color: #5979653d;
+    height: 41vh;
+    padding: 10px;
+    width: 33.3vw;
+}
+nav >  a:hover {
+    background-color: #F2F1E7;
+    color: #000000d6;
+    border-radius: 5px;
+}
 .map {
-    order: 4;
+    grid-area: map;
+    height: 15vh;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
 
 }
 
@@ -101,15 +155,47 @@ font-family: 'Open Sans', sans-serif;
 
 .select3 {
     grid-area: select3;
-    background-color: #597965;
+    background-color: #5979653d;
+    height: 41vh;
+    width: 50vw;
+    padding: 59px 0px 59px 117px;
 }
 
 .select1 {
     grid-area: select1;
-    background-color: #597965;
+    background-color: #5979653d;
+    height: 41vh;
+    width: 50vw;
+    padding: 59px 0px 59px 117px;
 }
-
-/* Style the middle column */
+.goal-health {
+    text-align: justify;
+    color: white;
+    background-color: #000000d6;
+    z-index: 2;
+    padding: 5px;
+    position: relative;
+    left: 15%;
+    top: 35px;
+    width: 79%;
+    height: 82%;
+}
+.text-wrap1 {
+    background-color: #384A3E;
+    border-radius: 10px;
+    width: 75%;
+    position: relative;
+    left: 60px;
+    padding: 5px;
+}
+.text-wrap2 {
+    background-color: #543E33;
+    border-radius: 10px;
+    width: 75%;
+    position: relative;
+    left: 60px;
+    padding: 5px;
+}
 .nav {
     grid-area: nav;
     text-align: center;
@@ -121,7 +207,10 @@ font-family: 'Open Sans', sans-serif;
 /* Style the right column */
 .right {
     grid-area: right;
-    background-color: #597965;
+    background-color: #5979653d;
+    height: 41vh;
+    padding: 10px;
+    width: 33.3vw;
 }
 
 /* Style the footer */
@@ -136,14 +225,15 @@ font-family: 'Open Sans', sans-serif;
 @media (max-width: 600px) {
     .grid-container {
         grid-template-areas:
-            'header header header header header header'
-            'nav nav nav nav nav nav'
-            'select1 select1 select1  select1 select1 select1'
-            'select3 select3 select3 select3 select3 select3'
-            'left left left left left left'
-            'right right right right right right'
-            'contact contact contact contact contact contact'
-            'footer footer footer footer footer footer';
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'left left left left left left'
+        'right right right right right right'
+        'select1 select1 select1 select1 select1 select1'
+        'select3 select3 select3 select3 select3 select3'
+        'contact contact contact contact contact contact'
+        'map map map map map map'
+        'footer footer footer footer footer footer';
     }
 }
 
@@ -160,7 +250,7 @@ h3 {
     font-family: 'Bellota Text', cursive;
 }
 
-nav>a {
+nav > a {
     color: #F2F1E7;
     text-transform: capitalize;
     text-decoration: none;
@@ -175,8 +265,7 @@ video {
     width: 50%;
     height: 50%;
     position: relative;
-
-    left: 25%;
+    background-color: ;
 }
 
 .text-align-center {
@@ -188,7 +277,10 @@ video {
     font-size: 2rem;
     background-color: #00000073;
 }
-
+.capita {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
 
 
 
@@ -196,19 +288,22 @@ video {
     text-align: center;
 }
 
-video {
+#video {
     border-radius: 8px;
-    width: 50%;
-    margin: 2%;
-    height: 100%;
+    border: #000000d6 solid 10px;
 }
 
 .list {
     text-align: center;
     color: white;
-    background-color: rgb(0 0 0 / 56%);
-    ;
+    background-color: #000000d6;
     z-index: 2;
+    padding: 5px;
+    position: relative;
+    left: 15%;
+    top: 35px;
+    width: 79%;
+    height: 82%;
 }
 
 li {
@@ -243,6 +338,9 @@ footer {
 }
 
 .material-symbols-outlined {
+    top: 5px;
+    left: 3px;
+    position: relative;
     font-variation-settings:
         'FILL'1,
         'wght'400,
