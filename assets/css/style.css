@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Life+Savers:wght@400;700;800&family=Open+Sans:wght@300&display=swap');
 
-
+#header-size {
+    width: 50%;
+}
 
 /* 
 font-family: 'Bellota Text', cursive;
@@ -28,8 +30,8 @@ font-family: 'Open Sans', sans-serif;
     grid-template-areas:
         'header header header header header header'
         'nav nav nav nav nav nav'
-        'select1 select1 select1 select3 select3 select3'
         'left left left right right right'
+        'select1 select1 select1 select3 select3 select3'
         'contact contact contact contact contact contact'
         'footer footer footer footer footer footer';
     /* grid-column-gap: 10px; - if you want gap between the columns */
@@ -44,12 +46,12 @@ font-family: 'Open Sans', sans-serif;
         'footer footer footer footer footer footer';}
 
 .home-background {
-    background-image: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/header%20pic%20risize.jpg?raw=true') fixed no-repeat; 
-     
+    background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat; 
+     background-size: 100vw 100vh;
 }
 .form {
     grid-area: form;
-    background-color: #ba834fbd;
+    background-color: ##5979653d;
 }
 #form-style {
     height: 50vh;
@@ -57,11 +59,11 @@ font-family: 'Open Sans', sans-serif;
 	padding: 25px;
 	border-radius: 8px;
 	margin: 25px auto;
-    background-color: white;
+    background-color: #daecff69;
 }
 .left {
     grid-area: left;
-    background: url('https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3269&q=80') fixed no-repeat;
+    
     height: 300px;
     padding: 10px;
     background-size: 68vw 116vh;
@@ -74,14 +76,15 @@ font-family: 'Open Sans', sans-serif;
 
 .contact {
     grid-area: contact;
-    background-color: #ba834fbd;
-    height: 20vh;
+    background-color: #597965;
+    height: 10vh;
 }
 
 .container-contact {
     display: inline-flex;
     justify-content: space-evenly;
     align-content: flex-end;
+    align-items: center;
 }
 
 .get-in-touch {
@@ -98,33 +101,33 @@ font-family: 'Open Sans', sans-serif;
 
 .select3 {
     grid-area: select3;
-    background-color: #ba834fbd;
+    background-color: #597965;
 }
 
 .select1 {
     grid-area: select1;
-    background-color: #ba834fbd;
+    background-color: #597965;
 }
 
 /* Style the middle column */
 .nav {
     grid-area: nav;
     text-align: center;
-    background-color: black;
-    height: 10vh;
-    padding-top: 3%;
+    background-color: #000000d6;
+    height: 5vh;
+    padding-top: 1%;
 }
 
 /* Style the right column */
 .right {
     grid-area: right;
-    background-color: #ba834fbd;
+    background-color: #597965;
 }
 
 /* Style the footer */
 .footer {
     grid-area: footer;
-    background-color: #f1f1f1;
+    background-color: #000000d6;
     padding: 10px;
     text-align: center;
 }
@@ -161,11 +164,11 @@ nav>a {
     color: #F2F1E7;
     text-transform: capitalize;
     text-decoration: none;
-    border: 3px outset;
-    border-radius: 10px;
+    border: 3px ;
     width: 20%;
-    padding: 1em;
+    padding: 0.5em;
     margin: 0.5rem;
+    font-size: 1.2rem;
 }
 
 video {
@@ -178,7 +181,7 @@ video {
 
 .text-align-center {
     text-align: center;
-    margin: 5rem 0;
+    margin: 5rem 25rem;
     color: rgb(255 255 255);
     position: relative;
     top: 150px;
@@ -186,9 +189,7 @@ video {
     background-color: #00000073;
 }
 
-#home {
-    background-image: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/header%20pic%20risize.jpg?raw=true');
-}
+
 
 
 .text-center {
@@ -213,7 +214,6 @@ video {
 li {
     list-style-type: none;
 }
-
 fieldset {
 	border: none;
 	margin-top: 20px;
@@ -222,8 +222,13 @@ fieldset {
 label {
     color: black;
 }
+legend {
+	font-size: 1.1rem;
+    font-weight: 900;
+	text-transform: uppercase;
+	margin: 20px 0 10px 0;
+}
 footer {
-    background-color: rgba(169, 169, 169, 0.246);
     text-align: center;
     height: 200px;
     width: 100%;
