@@ -83,6 +83,23 @@ font-family: 'Open Sans', sans-serif;
         'footer footer footer footer footer footer';
 }
 
+.gallery-wrap {
+    display: grid;
+    background-color: #5979653d;
+    height: 75vh;
+    padding: 10px;
+    width: 100vw;
+}
+.gallery{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: center;
+}
+#img1 {}
+#img2 {}
+#img3 {}
+#img4 {}
 .home-background {
     background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat; 
      background-size: 100vw 100vh;
