@@ -92,14 +92,32 @@ font-family: 'Open Sans', sans-serif;
 }
 .gallery{
     display:flex;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    align-items: center;
 }
-#img1 {}
-#img2 {}
-#img3 {}
-#img4 {}
+#img1 {
+    order: 1;
+    width: 10%;
+    height: 10%;
+}
+#img2 {
+    order: 2;
+    width: 10%;
+    height: 10%;
+}
+#img3 {
+    order: 3;
+    width: 10%;
+    height: 10%;
+}
+#img4 {
+    order: 4;
+    width: 10%;
+    height: 10%;
+}
+#img5 {
+    order: 5;
+    width: 10%;
+    height: 10%;
+}
 .home-background {
     background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat; 
      background-size: 100vw 100vh;
@@ -143,6 +161,10 @@ nav >  a:hover {
     border: none;
     border-radius: 5px;
 
+}
+
+.h3-list {
+text-align: left;
 }
 
 .contact {
@@ -193,9 +215,10 @@ nav >  a:hover {
     padding: 5px;
     position: relative;
     left: 15%;
-    top: 35px;
+    top: 87px;
     width: 79%;
-    height: 82%;
+    height: 50%;
+    border-radius: 10px;
 }
 .text-wrap1 {
     background-color: #384A3E;
@@ -206,7 +229,7 @@ nav >  a:hover {
     padding: 5px;
 }
 .text-wrap2 {
-    background-color: #543E33;
+    background-color: #dac667cf;
     border-radius: 10px;
     width: 75%;
     position: relative;
