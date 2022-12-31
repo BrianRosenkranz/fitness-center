@@ -27,6 +27,7 @@ font-family: 'Open Sans', sans-serif;
     right: 2%;
     bottom: 15%;
 }
+
 #the-top:hover {
     z-index: 4;
     background: black;
@@ -40,6 +41,7 @@ font-family: 'Open Sans', sans-serif;
     padding: 0.2%;
     right: 2%;
 }
+
 .header {
     grid-area: header;
     background-color: #f1f1f1;
@@ -56,13 +58,15 @@ font-family: 'Open Sans', sans-serif;
     grid-template-areas:
         'header header header header header header'
         'nav nav nav nav nav nav'
-        'left left middle middle right right'
-        'select1 select1 select1 select3 select3 select3'
+        'left left left left right right'
+        'select1 select1 middle middle right right'
+        'select2 select2 select3 select3 right right'
         'contact contact contact contact contact contact'
         'map map map map map map'
         'footer footer footer footer footer footer';
     /* grid-column-gap: 10px; - if you want gap between the columns */
 }
+
 .grid-container-form {
     display: grid;
     grid-template-areas:
@@ -71,89 +75,96 @@ font-family: 'Open Sans', sans-serif;
         'form form form form form form'
         'contact contact contact contact contact contact'
         'map map map map map map'
-        'footer footer footer footer footer footer';}
-.grid-container-gallery {
-    display: grid;
-    grid-template-areas:
-        'header header header header header header'
-        'nav nav nav nav nav nav'
-       'gallery gallery gallery gallery gallery gallery'
-        'contact contact contact contact contact contact'
-        'map map map map map map'
         'footer footer footer footer footer footer';
 }
 
-.gallery-wrap {
+.grid-container-gallery {
     display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'img1 img1 img2 img2 img3 img3'
+    'img4 img4 img4 img5 img5 img5'
+    'contact contact contact contact contact contact'
+    'map map map map map map'
+    'footer footer footer footer footer footer';
+}
+
+
+.img1 {
+    grid-area: img1;
     background-color: #5979653d;
-    height: 75vh;
+   width: 33.333vw;
+   height: 30vh;
     padding: 10px;
-    width: 100vw;
+    
 }
-.gallery{
-    display:flex;
-}
-#img1 {
-    order: 1;
-    width: 10%;
-    height: 10%;
-}
-#img2 {
-    order: 2;
-    width: 10%;
-    height: 10%;
-}
-#img3 {
-    order: 3;
-    width: 10%;
-    height: 10%;
-}
-#img4 {
-    order: 4;
-    width: 10%;
-    height: 10%;
-}
-#img5 {
-    order: 5;
-    width: 10%;
-    height: 10%;
-}
-.home-background {
-    background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat; 
-     background-size: 100vw 100vh;
-}
-.form {
-    grid-area: form;
+
+.img2 {
+    grid-area: img2;
     background-color: #5979653d;
+    width: 33.33vw;
+   height: 30vh;
+    padding: 10px;
+    
 }
-#form-style {
-    height: 50vh;
-    width: 700px;
-	padding: 25px;
-	border-radius: 8px;
-	margin: 25px auto;
-    background-color: #384a3ea3;
+
+.img3 {
+    grid-area: img3;
+    background-color: #5979653d;
+    width: 33.33vw;
+   height: 30vh;
+    padding: 10px;
+    
 }
+
+.img4 {
+    grid-area: img4;
+    background-color: #5979653d;
+    width: 50vw;
+   height: 30vh;
+    padding: 10px;
+    
+}
+
+.img5 {
+    grid-area: img5;
+    background-color: #5979653d;
+    width: 50vw;
+   height: 30vh;
+    padding: 10px;
+    
+}
+
+.home-background {
+    background: url('https://github.com/BrianRosenkranz/fitness-center/blob/main/assets/img/Header%20full%20Res.jpg?raw=true') fixed no-repeat;
+    background-size: 100vw 100vh;
+}
+
+
 .left {
     grid-area: left;
     background-color: #5979653d;
     height: 41vh;
     padding: 10px;
-    width: 33.3vw;
-   
+    width: 66.66vw;
+
 }
+
 .middle {
     grid-area: middle;
     background-color: #5979653d;
     height: 41vh;
     padding: 10px;
-    width: 33.3vw;
+    width: 33.333vw;
 }
-nav >  a:hover {
+
+nav>a:hover {
     background-color: #F2F1E7;
     color: #000000d6;
     border-radius: 5px;
 }
+
 .map {
     grid-area: map;
     height: 15vh;
@@ -164,7 +175,7 @@ nav >  a:hover {
 }
 
 .h3-list {
-text-align: left;
+    text-align: left;
 }
 
 .contact {
@@ -196,7 +207,14 @@ text-align: left;
     grid-area: select3;
     background-color: #5979653d;
     height: 41vh;
-    width: 50vw;
+    width: 33.33vw;
+    padding: 59px 0px 59px 117px;
+}
+.select2 {
+    grid-area: select2;
+    background-color: #5979653d;
+    height: 41vh;
+    width: 33.33vw;
     padding: 59px 0px 59px 117px;
 }
 
@@ -204,9 +222,10 @@ text-align: left;
     grid-area: select1;
     background-color: #5979653d;
     height: 41vh;
-    width: 50vw;
+    width: 33.33vw;
     padding: 59px 0px 59px 117px;
 }
+
 .goal-health {
     text-align: justify;
     color: white;
@@ -220,22 +239,37 @@ text-align: left;
     height: 50%;
     border-radius: 10px;
 }
+
 .text-wrap1 {
     background-color: #384A3E;
     border-radius: 10px;
     width: 75%;
     position: relative;
-    left: 60px;
+    left: 65px;
     padding: 5px;
+    top: 23px;
 }
+
+ul {
+    text-align: center;
+}
+
+#info-img {
+    height: 50%;
+    width: 50%;
+}
+
 .text-wrap2 {
     background-color: #dac667cf;
     border-radius: 10px;
     width: 75%;
     position: relative;
-    left: 60px;
+    left: 65px;
     padding: 5px;
+    height: 87%;
+    top: 23px;
 }
+
 .nav {
     grid-area: nav;
     text-align: center;
@@ -248,9 +282,9 @@ text-align: left;
 .right {
     grid-area: right;
     background-color: #5979653d;
-    height: 41vh;
+    height: 123vh;
     padding: 10px;
-    width: 33.3vw;
+    width: 33.333vw;
 }
 
 /* Style the footer */
@@ -265,15 +299,15 @@ text-align: left;
 @media (max-width: 600px) {
     .grid-container {
         grid-template-areas:
-        'header header header header header header'
-        'nav nav nav nav nav nav'
-        'left left left left left left'
-        'right right right right right right'
-        'select1 select1 select1 select1 select1 select1'
-        'select3 select3 select3 select3 select3 select3'
-        'contact contact contact contact contact contact'
-        'map map map map map map'
-        'footer footer footer footer footer footer';
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'left left left left left left'
+            'right right right right right right'
+            'select1 select1 select1 select1 select1 select1'
+            'select3 select3 select3 select3 select3 select3'
+            'contact contact contact contact contact contact'
+            'map map map map map map'
+            'footer footer footer footer footer footer';
     }
 }
 
@@ -286,15 +320,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+fieldset {
     font-family: 'Bellota Text', cursive;
 }
 
-nav > a {
+nav>a {
     color: #F2F1E7;
     text-transform: capitalize;
     text-decoration: none;
-    border: 3px ;
+    border: 3px;
     width: 20%;
     padding: 0.5em;
     margin: 0.5rem;
@@ -305,7 +340,7 @@ video {
     width: 50%;
     height: 50%;
     position: relative;
-    background-color: ;
+   
 }
 
 .text-align-center {
@@ -317,11 +352,11 @@ video {
     font-size: 2rem;
     background-color: #00000073;
 }
+
 .capita {
     text-transform: uppercase;
     text-decoration: underline;
 }
-
 
 
 .text-center {
@@ -349,20 +384,96 @@ video {
 li {
     list-style-type: none;
 }
+
+.form {
+    grid-area: form;
+    background-color: #5979653d;
+    height: 70vh;
+}
+
+#form-style {
+    height: 64vh;
+    width: 700px;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 25px auto;
+    background-color: #384a3ea3;
+}
+
 fieldset {
-	border: none;
-	margin-top: 20px;
-    color: black;
+    border: none;
+    margin-top: 20px;
+    color: white;
 }
+
 label {
-    color: black;
+    color: white;
 }
+
 legend {
-	font-size: 1.1rem;
+    font-size: 1.1rem;
     font-weight: 900;
-	text-transform: uppercase;
-	margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
 }
+input[type=text],
+input[type=email],
+input[list=time-list],
+input[type=tel],
+select {
+    height: 30px;
+    width: 67%;
+    padding-left: 10px;
+	margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+}
+input[type=submit] {
+	margin-top: 20px;
+	margin-left: 0.75rem;
+	padding: 0.75rem;
+	background-color: white;
+	color: #000000d6;
+	border: none;
+	border-radius: 5px;
+}
+textarea {
+    border-radius: 5px;
+    border: none;
+
+}
+input[type=reset] {
+
+	margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: #000000d6;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	margin-top: 20px;
+	margin-left: 0.75rem;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 5px;
+    background-color: #000000d6;
+    color: white;
+}
+
+input[type=reset]:hover {
+
+	margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: white;
+	color: #000000d6;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
 footer {
     text-align: center;
     height: 200px;
