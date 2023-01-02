@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Life+Savers:wght@400;700;800&family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Life+Savers:wght@400;700;800&family=Open+Sans:wght@300&family=Stalinist+One&display=swap');
 #header-size {
     width: 50%;
 }
@@ -185,16 +184,16 @@ font-family: 'Open Sans', sans-serif;
 .left {
     grid-area: left;
     background-color: #5979653d;
-    height: 41vh;
+    height: 30vh;
     padding: 10px;
-    width: 66.66vw;
+    width: 66.6666vw;
 
 }
 
 .middle {
     grid-area: middle;
     background-color: #5979653d;
-    height: 41vh;
+    height: 30vh;
     padding: 10px;
     width: 33.333vw;
 }
@@ -214,9 +213,6 @@ nav>a:hover {
 
 }
 
-.h3-list {
-    text-align: left;
-}
 
 .contact {
     grid-area: contact;
@@ -248,72 +244,165 @@ nav>a:hover {
 .get-in-touch>p {
     margin-top: 0.5em;
 }
+#gif-container {
+    width:100%;
+    height:0;
+    padding:10% 0 32%;
+    position:relative;
+    border-radius: 8px;
+}
+#gif-wrap{
+    width:100%; height:100%; 
+    position:absolute;
+}
+
 .select3 {
     grid-area: select3;
     background-color: #5979653d;
-    height: 41vh;
-    width: 33.33vw;
-    padding: 59px 0px 59px 117px;
+    height: 40vh;
+    width: 33.3333vw;
+    padding: 59px 0px 59px 17px;
 }
 
 .select2 {
     grid-area: select2;
     background-color: #5979653d;
-    height: 41vh;
-    width: 33.33vw;
+    height: 40vh;
+    width: 33.3333vw;
     padding: 59px 0px 59px 117px;
 }
 
 .select1 {
     grid-area: select1;
     background-color: #5979653d;
-    height: 41vh;
-    width: 33.33vw;
-    padding: 59px 0px 59px 117px;
+    height: 30vh;
+    width: 33.3333vw;
+    padding: 10px 0px 59px 117px;
 }
 
-.goal-health {
+#info-img {
+    width: 91%;
+    border: #000000d6 solid 10px;
+    border-radius: 8px;
+    position: relative; 
+    right: 40px;
+    height: 30vh;
+}
+#facilities {
+    text-align: left;
+    color: white;
+    background-color: #000000d6;
+    z-index: 2;
+    padding: 5px;
+    position: relative;
+    width: 76%;
+    height: 94%;
+    border-radius: 10px;
+}
+#goal{
     text-align: justify;
     color: white;
     background-color: #000000d6;
     z-index: 2;
     padding: 5px;
     position: relative;
-    left: 15%;
-    top: 87px;
+    left: 3%;
+    top: 1%;
     width: 79%;
-    height: 50%;
+    height: 92vh;
     border-radius: 10px;
 }
-
-.text-wrap1 {
+.goal-health {
+    text-align: left;
+    color: white;
+    background-color: #000000d6;
+    z-index: 2;
+    padding: 5px;
+    position: relative;
+    width: 76%;
+    height: 30vh;
+    border-radius: 10px;
+}
+#goal-container {
+    text-align: left;
+    color: white;
+    background-color: #000000d6;
+    z-index: 2;
+    padding: 5px;
+    position: relative;
+    left: 7%;
+    width: 86%;
+    height: 82%;
+    border-radius: 10px;
+    top: 10px;
+}
+#text-wrap1 {
     background-color: #384A3E;
     border-radius: 10px;
-    width: 75%;
+    width: 97%;
+    height: 54%;
     position: relative;
-    left: 65px;
-    padding: 5px;
-    top: 23px;
+    left: 9px;
+    padding: 15px;
+    top: 6%;
+}
+#goal>h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 6%;
+    background-color: #23b31b73;
+    
+}
+#text-wrap1>h3 {
+    font-size: 1.8rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#text-wrap1>p {
+    
+    font-size: 1.3em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#text-facilities {
+    background-color: #384A3E;
+    border-radius: 10px;
+    width: 97%;
+    position: relative;
+    left: 6px;
+    padding: 8px 23px;
+    top: 5px;
+    height: 96%;
+}
+#text-wrap-goal {
+    background-color: #384A3E;
+    border-radius: 10px;
+    width: 99%;
+    height: 97%;
+    position: relative;
+    left: 7px;
+    padding: 8px 23px;
+    top: 3px;
 }
 
-ul {
-    text-align: center;
-}
 
-#info-img {
-    height: 50%;
-    width: 50%;
-}
+
 
 .text-wrap2 {
     background-color: #dac667cf;
     border-radius: 10px;
-    width: 75%;
+    width: 97%;
     position: relative;
-    left: 65px;
-    padding: 5px;
-    height: 87%;
-    top: 23px;
+    left: 7px;
+    padding: 1px 23px ;
+    height: 97%;
+    top: 5px;
 }
 
 .nav {
@@ -328,7 +417,7 @@ ul {
 .right {
     grid-area: right;
     background-color: #5979653d;
-    height: 123vh;
+    height: 100vh;
     padding: 10px;
     width: 33.333vw;
 }
@@ -342,14 +431,15 @@ ul {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .grid-container {
         grid-template-areas:
             'header header header header header header'
             'nav nav nav nav nav nav'
             'left left left left left left'
             'right right right right right right'
-            'select1 select1 select1 select1 select1 select1'
+            'middle middle middle middle middle middle'
+            'select1 select1 select1 select2 select2 select2'
             'select3 select3 select3 select3 select3 select3'
             'contact contact contact contact contact contact'
             'map map map map map map'
@@ -362,14 +452,10 @@ body {
     background-color: black#ffffff;
     color: white;
     margin: 0;
+    font-size: 1.1rem;
 }
 
-h1,
-h2,
-h3,
-fieldset {
-    font-family: 'Bellota Text', cursive;
-}
+
 
 nav>a {
     color: #F2F1E7;
@@ -379,15 +465,10 @@ nav>a {
     width: 20%;
     padding: 0.5em;
     margin: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-video {
-    width: 50%;
-    height: 50%;
-    position: relative;
 
-}
 
 .text-align-center {
     text-align: center;
@@ -412,24 +493,12 @@ video {
 #video {
     border-radius: 8px;
     border: #000000d6 solid 10px;
-}
-
-.list {
-    text-align: center;
-    color: white;
-    background-color: #000000d6;
-    z-index: 2;
-    padding: 5px;
+    height: 94%;
+    width: 90%;
     position: relative;
-    left: 15%;
-    top: 35px;
-    width: 79%;
-    height: 82%;
+    right: 42px;
 }
 
-li {
-    list-style-type: none;
-}
 
 .form {
     grid-area: form;
@@ -530,7 +599,7 @@ footer {
     width: 100%;
 }
 footer>h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .float-left {
     float: left;
@@ -553,7 +622,7 @@ footer>h3 {
 
 .fa {
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     font-size: 40px;
     width: 50px;
     text-align: center;
