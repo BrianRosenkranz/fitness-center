@@ -350,7 +350,9 @@ nav>a:hover {
     font-size: 2.1rem;
     font-weight: bold;
     margin: 6%;
-    background-color: #23b31b73;
+    background-color: #384A3E;
+    border-radius: 8px;
+    padding-left: 5%;
     
 }
 #text-wrap1>h3 {
@@ -396,6 +398,7 @@ nav>a:hover {
 
 .text-wrap2 {
     background-color: #dac667cf;
+color: #000000;
     border-radius: 10px;
     width: 97%;
     position: relative;
