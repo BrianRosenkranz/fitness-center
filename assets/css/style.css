@@ -13,6 +13,10 @@ font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
+#img-logo {
+    text-align: left;
+}
+
 #the-top {
     z-index: 4;
     background: black;
@@ -81,59 +85,95 @@ font-family: 'Open Sans', sans-serif;
 .grid-container-gallery {
     display: grid;
     grid-template-areas:
-    'header header header header header header'
-    'nav nav nav nav nav nav'
-    'img1 img1 img2 img2 img3 img3'
-    'img4 img4 img4 img5 img5 img5'
-    'contact contact contact contact contact contact'
-    'map map map map map map'
-    'footer footer footer footer footer footer';
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'img1 img1 img2 img2 img3 img3'
+        'img4 img4 img4 img5 img5 img5'
+        'contact contact contact contact contact contact'
+        'map map map map map map'
+        'footer footer footer footer footer footer';
 }
 
 
-.img1 {
+.img-1 {
     grid-area: img1;
     background-color: #5979653d;
-   width: 33.333vw;
-   height: 30vh;
+    width: 33.333vw;
+    height: 45vh;
     padding: 10px;
-    
+
 }
 
-.img2 {
+.img-2 {
     grid-area: img2;
     background-color: #5979653d;
     width: 33.33vw;
-   height: 30vh;
+    height: 45vh;
     padding: 10px;
-    
+
 }
 
-.img3 {
+.img-3 {
     grid-area: img3;
     background-color: #5979653d;
     width: 33.33vw;
-   height: 30vh;
+    height: 45vh;
     padding: 10px;
-    
+
 }
 
-.img4 {
+.img-4 {
     grid-area: img4;
     background-color: #5979653d;
     width: 50vw;
-   height: 30vh;
+    height: 45vh;
     padding: 10px;
-    
+
 }
 
-.img5 {
+.img-5 {
     grid-area: img5;
     background-color: #5979653d;
     width: 50vw;
-   height: 30vh;
+    height: 45vh;
     padding: 10px;
-    
+
+}
+
+/* from 144 to 165 an id selector to the img did not work*/
+.img-1>a>img {
+    position: relative;
+    left: 22%;
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+}
+
+.img-2>a>img {
+    position: relative;
+    left: 22%;
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+}
+
+.img-3>a>img {
+    position: relative;
+    left: 22%;
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+}
+
+.img-4>a>img {
+    position: relative;
+    left: 20%;
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+}
+
+.img-5>a>img {
+    position: relative;
+    left: 18%;
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
 }
 
 .home-background {
@@ -202,7 +242,12 @@ nav>a:hover {
 .address {
     order: 3;
 }
-
+.get-in-touch>a {
+    color: white;
+}
+.get-in-touch>p {
+    margin-top: 0.5em;
+}
 .select3 {
     grid-area: select3;
     background-color: #5979653d;
@@ -210,6 +255,7 @@ nav>a:hover {
     width: 33.33vw;
     padding: 59px 0px 59px 117px;
 }
+
 .select2 {
     grid-area: select2;
     background-color: #5979653d;
@@ -340,7 +386,7 @@ video {
     width: 50%;
     height: 50%;
     position: relative;
-   
+
 }
 
 .text-align-center {
@@ -348,7 +394,7 @@ video {
     margin: 5rem 25rem;
     color: rgb(255 255 255);
     position: relative;
-    top: 150px;
+    bottom: 50px;
     font-size: 2rem;
     background-color: #00000073;
 }
@@ -416,6 +462,7 @@ legend {
     text-transform: uppercase;
     margin: 20px 0 10px 0;
 }
+
 input[type=text],
 input[type=email],
 input[list=time-list],
@@ -424,27 +471,30 @@ select {
     height: 30px;
     width: 67%;
     padding-left: 10px;
-	margin: 0 auto;
+    margin: 0 auto;
     border-radius: 5px;
     border: none;
 }
+
 input[type=submit] {
-	margin-top: 20px;
-	margin-left: 0.75rem;
-	padding: 0.75rem;
-	background-color: white;
-	color: #000000d6;
-	border: none;
-	border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: white;
+    color: #000000d6;
+    border: none;
+    border-radius: 5px;
 }
+
 textarea {
     border-radius: 5px;
     border: none;
 
 }
+
 input[type=reset] {
 
-	margin-top: 20px;
+    margin-top: 20px;
     margin-left: 0.75rem;
     padding: 0.75rem;
     background-color: #000000d6;
@@ -454,22 +504,22 @@ input[type=reset] {
 }
 
 input[type=submit]:hover {
-	margin-top: 20px;
-	margin-left: 0.75rem;
-	padding: 0.75rem;
-	border: none;
-	border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
     background-color: #000000d6;
     color: white;
 }
 
 input[type=reset]:hover {
 
-	margin-top: 20px;
+    margin-top: 20px;
     margin-left: 0.75rem;
     padding: 0.75rem;
     background-color: white;
-	color: #000000d6;
+    color: #000000d6;
     border: 1px solid #000000;
     border-radius: 5px;
 }
@@ -479,7 +529,9 @@ footer {
     height: 200px;
     width: 100%;
 }
-
+footer>h3 {
+    font-size: 1rem;
+}
 .float-left {
     float: left;
 }
@@ -501,7 +553,8 @@ footer {
 
 .fa {
     padding: 20px;
-    font-size: 30px;
+    margin: 10px;
+    font-size: 40px;
     width: 50px;
     text-align: center;
     text-decoration: none;
