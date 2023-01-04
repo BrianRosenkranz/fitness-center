@@ -66,13 +66,13 @@ nav > a {
   z-index: 4;
   background: black;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   position: fixed;
   text-align: center;
-  padding: 2px 6px 1px 0px;
-  right: 2%;
+  padding: 1% 2% 2% 1%;
+  right: 1%;
   bottom: 15%;
 }
 
@@ -689,6 +689,20 @@ footer > h3 {
         font-size: 100%;
         background-color: #000000bd;
     }
+    #the-top {
+      z-index: 4;
+      background: black;
+      color: white;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      position: fixed;
+      text-align: center;
+      padding: 1% 3% 3% 2%;
+      right: 2%;
+      bottom: 15%;
+  }
+  /* Info section */
       #text-wrap-goal{
          background-color: #384a3e;
       border-radius: 10px;
@@ -861,6 +875,19 @@ top: 50px;
     bottom: 68px;
     font-size: 97%;
     background-color: #000000bd;
+}
+#the-top {
+  z-index: 4;
+  background: black;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: fixed;
+  text-align: center;
+  padding: 1% 4% 1% 2%;
+  right: 2%;
+  bottom: 15%;
 }
 /* Navigation bar */
 .nav {
@@ -1039,13 +1066,26 @@ width: 60%;
     font-size: 60%;
   }
   .home-background {
-    background: url('../images/home-800px.jpg') fixed no-repeat;
+    background: url('../images/home-mobil.jpg') fixed no-repeat;
     background-size: 100% 100%;
     background-position: center center;
 }
   #logo {
     height: 56%;
-    width: 13%;
+    width: 21%;
+}
+#the-top {
+  z-index: 4;
+  background: black;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: fixed;
+  text-align: center;
+  padding: 1% 4% 1% 2%;
+  right: 2%;
+  bottom: 15%;
 }
 /* Navigation bar */
 .nav {
@@ -1057,11 +1097,13 @@ width: 60%;
 nav > a {
   border: 3px;
   width: 20%;
-  padding: 10px;
-  margin: 10px;
+  padding: 2%;
+  margin: 2%;
   font-size: 90%;
 }
-
+.active {
+  text-decoration: underline;
+}
 /* Info segment */
   .text-align-center {
     text-align: center;
@@ -1083,15 +1125,22 @@ nav > a {
   top: 3px;
   font-size: 95%;
  }
+ #goal > h2 {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 1%;
+  background-color: #384a3e;
+  border-radius: 8px;
+  padding: 2%;
+}
  #goal {
     text-align: justify;
     color: white;
     background-color: #000000d6;
     z-index: 2;
-    padding: 11px 11px 5%;
-    position: relative;
-    left: 58px;
-    top: 12px;
+    padding: 1% 3% 3%;
+    position: unset;
+    margin-left: 6%;
     width: 88%;
     height: 100%;
     border-radius: 10px;
@@ -1113,18 +1162,45 @@ nav > a {
 #info-img {
     border: #000000d6 solid 10px;
     border-radius: 8px;
-    position: relative;
-    left: 100px;
+    position: unset;
+    margin-left: 8%;
     height: 84%;
-    width: 70%;
+    width: 85%;
+
+}
+#facilities {
+  height: auto;
+  margin-left: 8%;
+  position: unset;
+  padding: 2% 0% 2% 2%;
+}
+#text-facilities {
+
+   position: unset;
+  padding: 1% 0% 1% 7%;
+  height: auto;
+}
+.goal-health {
+  position: unset;
+  width: 76%;
+  margin-left: 8%;
+}
+.select2 {
+   margin: 0;
+}
+.select3 {
+  grid-area: select3;
+  background-color: #5979653d;
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+  margin-left: 1%;
 }
 #video {
-    border-radius: 8px;
-    border: #000000d6 solid 10px;
+    border: #000000d6 solid 7px;
     height: 100%;
-    width: 97%;
+    width: 96%;
     position: unset;
-    left: 14px;
     margin-left: 1%;
 }
 #goal-container {
@@ -1157,6 +1233,14 @@ grid-template-areas:
   "map map map map map map"
   "footer footer footer footer footer footer";
 }    
+#form-style {
+  height: 94%;
+  width: 94%;
+  padding: 11px 25px 25px;
+  border-radius: 8px;
+  margin: 25px auto;
+  background-color: #384a3ea3;
+}
 /* gallery.html */
 .grid-container-gallery {
 display: grid;
@@ -1164,7 +1248,8 @@ grid-template-areas:
   "header header header header header header"
   "nav nav nav nav nav nav"
   "img3 img3 img3 img3 img3 img3"
-  "img1 img1 img1 img2 img2 img2"
+  "img1 img1 img1 img1 img1 img1"
+  "img2 img2 img2 img2 img2 img2"
   "img4 img4 img4 img4 img4 img4"
   "img5 img5 img5 img5 img5 img5"
   "contact contact contact contact contact contact"
@@ -1173,41 +1258,43 @@ grid-template-areas:
 
 .img-1 > a > img {
 border-radius: 5px;
-border: #000000d6 solid 10px;
+border: #000000d6 solid 7px;
 margin-left: 25px;
+height: 100%;
+width: 90%;
 }
 
 .img-2 > a > img {
 border-radius: 5px;
-border: #000000d6 solid 10px;
+border: #000000d6 solid 7px;
 margin-left: 25px;
+height: 100%;
+width: 90%;
 }
 
 .img-3 > a > img {
 border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left:25%;
-height: 80%;
-width: 51%;
-position: relative;
-top: 50px;
+border: #000000d6 solid 7px;
+margin-left: 59px;
+height: 90%;
+width: 70%;
+position: unset;
 }
 
 .img-4 > a > img {
 border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 20%;
-height: 80%;
-width: 60%;
-position: relative;
-top: 50px;
+border: #000000d6 solid 7px;
+margin-left: 25px;
+height: 100%;
+width: 90%;
+position: unset;
 }
 
 .img-5 > a > img {
 border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 20%;
-height: 80%;
-width: 60%;
+border: #000000d6 solid 7px;
+margin-left: 25px;
+height: 100%;
+width: 90%;
 }
  }
