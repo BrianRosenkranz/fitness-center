@@ -72,7 +72,7 @@ The author designed the website for the customers hoping that all queries about 
 ## Validator testing
 - Html
     + No errors were returned when passing through the official [W3C validator.]()
-    + No errors were returned when passing through the official [W3C CSS validaotr.]()
+    + No errors were returned when passing through the official [W3C CSS validaotr.][https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbrianrosenkranz.github.io%2Ffitness-center%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en]
 # Deployment.
 
 - After committing and pushing from Gitpod, the website was deployed using Github.
@@ -96,3 +96,6 @@ The author designed the website for the customers hoping that all queries about 
 - The logo was fetched from https://www.freelogodesign.org/
 - The psychology of color is acquired on the website. https://hs-marketing-contentful.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fp15sglj92v6o%2F3zeRC0ATjrNo7vCfFoXs6%2F47858c9fee60a7a3a89722355e1ccdd7%2F5-17-emotion.png?ixlib=gatsbySourceUrl-2.0.2&auto=format%2Ccompress&w=690&h=605&s=9ee2ab0bfe321259db8388343dc68495
 - I use the ReadMe template of coding institue
+
+
+[def]: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbrianrosenkranz.github.io%2Ffitness-center%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
