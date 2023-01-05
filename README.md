@@ -69,7 +69,10 @@ The author designed the website for the customers hoping that all queries about 
  - The background picture went through crop sizing for tablets(768x800px) and mobiles(568x800px). The Gallery pictures stayed at full resolution despite using the picture element with the source attribute failing to react in responsive design. Regardless of the image element with "srcset," "size," and "src" attributes did not contribute further help in responsive design. However, validation did not appear other issues or errors. Media query and TinyPNG were used to resolve the abovementioned problem to have good, no stretched or pixeled images.
  - At first, the author used google icons but failed to create a responsive design. For that reason, another font source like Fontawesome.com was used to solve the problem. The author used version 5 because version 6 was not working correctly.
   - All of the colors used in the site were tested with [webaim](https://webaim.org/resources/contrastchecker/).
-
+## Validator testing
+- Html
+    + No errors were returned when passing through the official [W3C validator.]()
+    + No errors were returned when passing through the official [W3C CSS validaotr.]()
 # Deployment.
 
 - After committing and pushing from Gitpod, the website was deployed using Github.
@@ -92,6 +95,4 @@ The author designed the website for the customers hoping that all queries about 
 -Media query was taken from Code institute and a GitHub blog.
 - The logo was fetched from https://www.freelogodesign.org/
 - The psychology of color is acquired on the website. https://hs-marketing-contentful.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fp15sglj92v6o%2F3zeRC0ATjrNo7vCfFoXs6%2F47858c9fee60a7a3a89722355e1ccdd7%2F5-17-emotion.png?ixlib=gatsbySourceUrl-2.0.2&auto=format%2Ccompress&w=690&h=605&s=9ee2ab0bfe321259db8388343dc68495
-
-
-
+- I use the ReadMe template of coding institue

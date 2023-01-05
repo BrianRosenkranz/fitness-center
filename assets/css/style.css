@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Orbitron:wght@700&display=swap");
-
+/* 
+I have done my project in a Mac 5k retina, creating problems with the #info-img and #video.
+ Because of this, I added an media query for a resolution of more than 1300px
+*/
 #header-size {
   width: 50%;
 }
-
 /* 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Orbitron', sans-serif;
@@ -11,7 +13,6 @@ font-family: 'Orbitron', sans-serif;
 * {
   box-sizing: border-box;
 }
-
 /*Body and page image*/
 body {
   font-family: "Open Sans", Aria, sans-serif;
@@ -22,12 +23,10 @@ body {
   font-size: 86%;
   letter-spacing: 2px;
 }
-
 .home-background {
-  background: url('../images/home-full.jpg') fixed no-repeat;
+  background: url("../images/home-full.jpg") fixed no-repeat;
   background-size: cover;
 }
-
 h1,
 h2,
 h3,
@@ -36,7 +35,6 @@ nav > a {
   font-weight: 700;
   letter-spacing: 4px;
 }
-
 /*the Header and the logo*/
 .text-align-center {
   text-align: center;
@@ -47,21 +45,17 @@ nav > a {
   font-size: 120%;
   background-color: #000000bd;
 }
-
 .text-align-center > h2 {
   font-size: 113%;
 }
-
 #img-logo {
   text-align: left;
   height: 53%;
 }
-
 #logo {
-  height: 80%;
+  height: 50%;
   width: 12%;
 }
-
 #the-top {
   z-index: 4;
   background: black;
@@ -75,13 +69,11 @@ nav > a {
   right: 1%;
   bottom: 15%;
 }
-
 #the-top:hover {
   z-index: 4;
   background: white;
   color: black;
 }
-
 .header {
   grid-area: header;
   padding: 30px;
@@ -91,14 +83,12 @@ nav > a {
 
   text-transform: uppercase;
 }
-
 /* Navigation*/
 nav > a:hover {
   background-color: #f2f1e7;
   color: #000000d6;
   border-radius: 5px;
 }
-
 .nav {
   grid-area: nav;
   text-align: center;
@@ -106,7 +96,6 @@ nav > a:hover {
   height: 7vh;
   padding: 1%;
 }
-
 nav > a {
   color: #f2f1e7;
   text-transform: capitalize;
@@ -117,11 +106,9 @@ nav > a {
   margin: 10px;
   font-size: 128%;
 }
-
 .active {
   border-bottom: white 2px solid;
 }
-
 /* The grid container */
 .grid-container {
   display: grid;
@@ -136,7 +123,6 @@ nav > a {
     "footer footer footer footer footer footer";
   /* grid-column-gap: 10px; - if you want gap between the columns */
 }
-
 .grid-container-form {
   display: grid;
   grid-template-areas:
@@ -147,7 +133,6 @@ nav > a {
     "map map map map map map"
     "footer footer footer footer footer footer";
 }
-
 .grid-container-gallery {
   display: grid;
   grid-template-areas:
@@ -159,7 +144,6 @@ nav > a {
     "map map map map map map"
     "footer footer footer footer footer footer";
 }
-
 .img-1 {
   grid-area: img1;
   background-color: #5979653d;
@@ -167,7 +151,6 @@ nav > a {
   height: 100%;
   padding: 10px;
 }
-
 .img-2 {
   grid-area: img2;
   background-color: #5979653d;
@@ -175,7 +158,6 @@ nav > a {
   height: 100%;
   padding: 10px;
 }
-
 .img-3 {
   grid-area: img3;
   background-color: #5979653d;
@@ -183,7 +165,6 @@ nav > a {
   height: 100%;
   padding: 10px;
 }
-
 .img-4 {
   grid-area: img4;
   background-color: #5979653d;
@@ -191,56 +172,48 @@ nav > a {
   height: 100%;
   padding: 10px;
 }
-
 .img-5 {
   grid-area: img5;
   background-color: #5979653d;
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
   padding: 10px;
 }
-
-/* from 144 to 165 an id selector to the img did not work*/
 .img-1 > a > img {
   border-radius: 5px;
   border: #000000d6 solid 10px;
   margin-left: 25px;
   width: 99%;
-height: 100%;
+  height: 100%;
 }
-
 .img-2 > a > img {
   border-radius: 5px;
   border: #000000d6 solid 10px;
   margin-left: 25px;
   width: 90%;
-height: 100%;
+  height: 100%;
 }
-
 .img-3 > a > img {
   border-radius: 5px;
   border: #000000d6 solid 10px;
-  margin-left:25px;
+  margin-left: 25px;
   width: 90%;
-height: 100%;
+  height: 100%;
 }
-
 .img-4 > a > img {
   border-radius: 5px;
   border: #000000d6 solid 10px;
   margin-left: 25px;
   width: 90%;
-height: 100%;
+  height: 100%;
 }
-
 .img-5 > a > img {
   border-radius: 5px;
   border: #000000d6 solid 10px;
   margin-left: 25px;
   width: 90%;
-height: 100%;
+  height: 100%;
 }
-
 .left {
   grid-area: left;
   background-color: #5979653d;
@@ -248,7 +221,6 @@ height: 100%;
   padding: 10px;
   width: 100%;
 }
-
 .middle {
   grid-area: middle;
   background-color: #5979653d;
@@ -256,7 +228,6 @@ height: 100%;
   padding: 22px 0px 0px 0px;
   width: 100%;
 }
-
 .map {
   grid-area: map;
   height: 100%;
@@ -264,7 +235,7 @@ height: 100%;
   border: none;
   border-radius: 5px;
 }
-.map>iframe {
+.map > iframe {
   width: 100%;
   height: 100%;
 }
@@ -274,34 +245,27 @@ height: 100%;
   height: 100%;
   width: 100%;
 }
-
 .container-contact {
   display: inline-flex;
   justify-content: space-evenly;
   align-content: flex-end;
   align-items: center;
 }
-
 .get-in-touch {
   order: 1;
 }
-
 .schedule {
   order: 2;
 }
-
 .address {
   order: 3;
 }
-
 .get-in-touch > a {
   color: white;
 }
-
 .get-in-touch > p {
   margin-top: 0.5em;
 }
-
 #gif-container {
   width: 100%;
   height: 25%;
@@ -309,18 +273,15 @@ height: 100%;
   position: relative;
   border-radius: 8px;
 }
-
 #gif-wrap {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-
 #goal a {
   color: white;
   text-decoration: none;
 }
-
 .select3 {
   grid-area: select3;
   background-color: #5979653d;
@@ -329,7 +290,6 @@ height: 100%;
   width: 100%;
   margin: 0 0 80px 0;
 }
-
 .select2 {
   grid-area: select2;
   background-color: #5979653d;
@@ -339,14 +299,12 @@ height: 100%;
   margin: 0 0 80px 0;
   font-size: 110%;
 }
-
 .select1 {
   grid-area: select1;
   background-color: #5979653d;
   height: 100%;
   padding: 19px 0 20px 37px;
 }
-
 #info-img {
   border: #000000d6 solid 10px;
   border-radius: 8px;
@@ -355,7 +313,6 @@ height: 100%;
   height: 344px;
   width: 149%;
 }
-
 #facilities {
   text-align: left;
   color: white;
@@ -367,7 +324,6 @@ height: 100%;
   height: 100%;
   border-radius: 10px;
 }
-
 #goal {
   text-align: justify;
   color: white;
@@ -381,7 +337,6 @@ height: 100%;
   height: 98%;
   border-radius: 10px;
 }
-
 .goal-health {
   text-align: left;
   color: white;
@@ -393,7 +348,6 @@ height: 100%;
   height: 102%;
   border-radius: 10px;
 }
-
 #goal-container {
   text-align: left;
   color: white;
@@ -407,7 +361,6 @@ height: 100%;
   border-radius: 10px;
   top: 10px;
 }
-
 #text-wrap1 {
   background-color: #384a3e;
   border-radius: 10px;
@@ -419,7 +372,6 @@ height: 100%;
   top: 49px;
   font-size: 113%;
 }
-
 #goal > h2 {
   font-size: 150%;
   font-weight: bold;
@@ -428,7 +380,6 @@ height: 100%;
   border-radius: 8px;
   padding: 14px;
 }
-
 #text-facilities {
   background-color: #384a3e;
   border-radius: 10px;
@@ -440,7 +391,6 @@ height: 100%;
   height: 96%;
   font-size: 106%;
 }
-
 #text-wrap-goal {
   background-color: #384a3e;
   border-radius: 10px;
@@ -452,7 +402,6 @@ height: 100%;
   top: 3px;
   font-size: 95%;
 }
-
 .text-wrap2 {
   background-color: #dac667cf;
   color: #000000;
@@ -465,7 +414,6 @@ height: 100%;
   top: 5px;
   font-size: 100%;
 }
-
 .right {
   grid-area: right;
   background-color: #5979653d;
@@ -474,7 +422,6 @@ height: 100%;
   width: 100%;
   margin: 0 0 80px 0;
 }
-
 /* Style the footer */
 .footer {
   grid-area: footer;
@@ -482,15 +429,12 @@ height: 100%;
   padding: 10px;
   text-align: center;
 }
-
 .capita {
   text-transform: uppercase;
 }
-
 .text-center {
   text-align: center;
 }
-
 #video {
   border-radius: 8px;
   border: #000000d6 solid 10px;
@@ -500,13 +444,11 @@ height: 100%;
   right: 100px;
   top: 20px;
 }
-
 .form {
   grid-area: form;
   background-color: #5979653d;
   height: 100%;
 }
-
 #form-style {
   height: 94%;
   width: 700px;
@@ -515,25 +457,21 @@ height: 100%;
   margin: 25px auto;
   background-color: #384a3ea3;
 }
-
 fieldset {
   border: none;
   margin-top: 20px;
   color: white;
 }
-
 label {
   color: white;
 }
-
 legend {
-    font-family: 'Orbitron', Arial, sans-serif;
+  font-family: "Orbitron", Arial, sans-serif;
   font-size: 121%;
   font-weight: 900;
   text-transform: uppercase;
   margin: 20px 0 10px 0;
 }
-
 input[type="text"],
 input[type="email"],
 input[list="time-list"],
@@ -553,7 +491,7 @@ input[type="email"]:hover,
 input[list="time-list"]:hover,
 input[type="tel"]:hover,
 select:hover {
-        border: green 2px solid;
+  border: green 2px solid;
 }
 input[type="submit"] {
   margin-top: 20px;
@@ -564,14 +502,12 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
 }
-
 textarea {
   border-radius: 5px;
   border: none;
   width: 67%;
   background-color: #fafafa;
 }
-
 input[type="reset"] {
   margin-top: 20px;
   margin-left: 0.75rem;
@@ -581,7 +517,6 @@ input[type="reset"] {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-
 input[type="submit"]:hover {
   margin-top: 20px;
   margin-left: 0.75rem;
@@ -591,7 +526,6 @@ input[type="submit"]:hover {
   background-color: #000000d6;
   color: white;
 }
-
 input[type="reset"]:hover {
   margin-top: 20px;
   margin-left: 0.75rem;
@@ -601,26 +535,20 @@ input[type="reset"]:hover {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-
 footer {
   text-align: center;
   height: 100%;
   width: 100%;
 }
-
 footer > h3 {
   font-size: 124%;
 }
-
 .float-left {
   float: left;
 }
-
 .float-right {
   float: right;
 }
-
-
 .fa {
   padding: 17px;
   margin: 5px;
@@ -629,11 +557,9 @@ footer > h3 {
   text-align: center;
   text-decoration: none;
 }
-
 .fa:hover {
   opacity: 0.7;
 }
-
 .fa-facebook {
   background: #3b5998;
   color: white;
@@ -641,7 +567,6 @@ footer > h3 {
   height: 50px;
   width: 50px;
 }
-
 .fa-twitter {
   background: #55acee;
   color: white;
@@ -649,7 +574,6 @@ footer > h3 {
   height: 50px;
   width: 50px;
 }
-
 .fa-instagram {
   background: #7c1288;
   color: white;
@@ -657,194 +581,14 @@ footer > h3 {
   height: 50px;
   width: 50px;
 }
-
-/* Media query for 768px to 1100px */
-
-  @media all and (min-width: 768px) and (max-width: 1100px) {
-   /* index.html */
-    .grid-container {
-        grid-template-areas:
-          "header header header header header header"
-          "nav nav nav nav nav nav"
-          "left left left left left left"
-          "right right right right right right"
-          "middle middle middle middle middle middle"
-          "select1 select1 select1 select2 select2 select2"
-          "select3 select3 select3 select3 select3 select3"
-          "contact contact contact contact contact contact"
-          "map map map map map map"
-          "footer footer footer footer footer footer";
-      }
-      
-      #logo {
-        height: 56%;
-        width: 13%;
-    }
-      .text-align-center {
-        text-align: center;
-        margin: 7px 2%;
-        color: rgb(255 255 255);
-        position: relative;
-        bottom: 68px;
-        font-size: 100%;
-        background-color: #000000bd;
-    }
-    #the-top {
-      z-index: 4;
-      background: black;
-      color: white;
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      position: fixed;
-      text-align: center;
-      padding: 1% 3% 3% 2%;
-      right: 2%;
-      bottom: 15%;
-  }
-  /* Info section */
-      #text-wrap-goal{
-         background-color: #384a3e;
-      border-radius: 10px;
-      width: 99%;
-      height: 97%;
-      position: relative;
-      left: 4px;
-      padding: 8px 23px;
-      top: 3px;
-      font-size: 95%;
-     }
-     #goal {
-        text-align: justify;
-        color: white;
-        background-color: #000000d6;
-        z-index: 2;
-        padding: 11px 11px 3%;
-        position: relative;
-        left: 58px;
-        top: 12px;
-        width: 88%;
-        height: 100%;
-        border-radius: 10px;
-    }
-     #gif-wrap {
-        width: 45%;
-        height: 74%;
-        position: absolute;
-    }
-    #text-wrap1 {
-        background-color: #384a3e;
-        border-radius: 10px;
-        width: 99%;
-        height: 55%;
-        padding: 2px 24px 0px 24px;
-        font-size: 103%;
-        position: unset;
-    }
-    #info-img {
-        border: #000000d6 solid 10px;
-        border-radius: 8px;
-        position: relative;
-        left: 100px;
-        height: 84%;
-        width: 70%;
-    }
-    #video {
-        border-radius: 8px;
-        border: #000000d6 solid 10px;
-        height: 100%;
-        width: 97%;
-        position: unset;
-        left: 14px;
-        margin-left: 20px;
-    }
-    #goal-container {
-        text-align: left;
-        color: white;
-        background-color: #000000d6;
-        z-index: 2;
-        padding: 5px;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        position: unset;
-    }
-    .contact {
-      grid-area: contact;
-      background-color: #597965;
-      height: 100%;
-      width: 100%;
-      padding: 1%;
-  }
-    /* form.html */
-    .grid-container-form {
-      display: grid;
-      grid-template-areas:
-        "header header header header header header"
-        "nav nav nav nav nav nav"
-        "form form form form form form"
-        "contact contact contact contact contact contact"
-        "map map map map map map"
-        "footer footer footer footer footer footer";
-    }    
-    /* gallery.html */
-    .grid-container-gallery {
-      display: grid;
-      grid-template-areas:
-        "header header header header header header"
-        "nav nav nav nav nav nav"
-        "img3 img3 img3 img3 img3 img3"
-        "img1 img1 img1 img2 img2 img2"
-        "img4 img4 img4 img4 img4 img4"
-        "img5 img5 img5 img5 img5 img5"
-        "contact contact contact contact contact contact"
-        "map map map map map map"
-        "footer footer footer footer footer footer";}
-   
-   .img-1 > a > img {
-    border-radius: 5px;
-    border: #000000d6 solid 10px;
-    margin-left: 25px;
-  }
-  
-  .img-2 > a > img {
-    border-radius: 5px;
-    border: #000000d6 solid 10px;
-    margin-left: 25px;
-  }
-  
-  .img-3 > a > img {
-    border-radius: 5px;
-    border: #000000d6 solid 10px;
-    margin-left:25%;
-    height: 80%;
-width: 51%;
-position: relative;
-top: 50px;
-  }
-  
-  .img-4 > a > img {
-    border-radius: 5px;
-    border: #000000d6 solid 10px;
-    margin-left: 20%;
-    height: 80%;
-    width: 60%;
-    position: relative;
-top: 50px;
-  }
-  
-  .img-5 > a > img {
-    border-radius: 5px;
-    border: #000000d6 solid 10px;
-    margin-left: 20%;
-    height: 80%;
-    width: 60%;
-  }
+.no-h2 {
+visibility: hidden;
+display: none;
 }
-/* media query from 480px to 768px */
-@media all and (min-width: 480px) and (max-width: 768px) {
-   /* index.html */
-   .grid-container {
+/* Media query for 768px to 1100px */
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  /* index.html */
+  .grid-container {
     grid-template-areas:
       "header header header header header header"
       "nav nav nav nav nav nav"
@@ -857,16 +601,198 @@ top: 50px;
       "map map map map map map"
       "footer footer footer footer footer footer";
   }
-
-  .home-background {
-    background: url('../images/home-800px.jpg') fixed no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-}
+  /* header */
   #logo {
     height: 56%;
     width: 13%;
+  }
+  .text-align-center {
+    text-align: center;
+    margin: 7px 2%;
+    color: rgb(255 255 255);
+    position: relative;
+    bottom: 68px;
+    font-size: 100%;
+    background-color: #000000bd;
+  }
+  #the-top {
+    z-index: 4;
+    background: black;
+    color: white;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    padding: 1% 3% 3% 2%;
+    right: 2%;
+    bottom: 15%;
+  }
+  /* Info section */
+  #text-wrap-goal {
+    background-color: #384a3e;
+    border-radius: 10px;
+    width: 99%;
+    height: 97%;
+    position: relative;
+    left: 4px;
+    padding: 8px 23px;
+    top: 3px;
+    font-size: 95%;
+  }
+  #goal {
+    padding: 11px 11px 3%;
+    position: unset;
+    width: 88%;
+    height: 100%;
+    margin-left: 6%;
+  }
+  #gif-wrap {
+    width: 45%;
+    height: 74%;
+    position: absolute;
+  }
+  #text-wrap1 {
+    background-color: #384a3e;
+    border-radius: 10px;
+    width: 99%;
+    height: 55%;
+    padding: 2px 24px 0px 24px;
+    font-size: 103%;
+    position: unset;
+  }
+  #info-img {
+    border: #000000d6 solid 10px;
+    border-radius: 8px;
+    position: unset;
+    left: 100px;
+    height: 84%;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .goal-health {
+    position: unset;
+    margin-left: 4%;
+  }
+  #facilities {
+    position: unset;
+    margin-left: 4%;
+  }
+  #text-facilities {
+    font-size: 100%;
+  }
+  #video {
+    border-radius: 8px;
+    border: #000000d6 solid 10px;
+    height: 100%;
+    width: 97%;
+    position: unset;
+    left: 14px;
+    margin-left: 20px;
+  }
+  #goal-container {
+    text-align: left;
+    color: white;
+    background-color: #000000d6;
+    z-index: 2;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: unset;
+  }
+  .contact {
+    grid-area: contact;
+    background-color: #597965;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+  }
+  /* form.html */
+  .grid-container-form {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "form form form form form form"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  /* gallery.html */
+  .grid-container-gallery {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "img3 img3 img3 img3 img3 img3"
+      "img1 img1 img1 img2 img2 img2"
+      "img4 img4 img4 img4 img4 img4"
+      "img5 img5 img5 img5 img5 img5"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  .img-1 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25px;
+  }
+  .img-2 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25px;
+  }
+  .img-3 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25%;
+    height: 80%;
+    width: 51%;
+    position: relative;
+    top: 50px;
+  }
+  .img-4 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 20%;
+    height: 80%;
+    width: 60%;
+    position: relative;
+    top: 50px;
+  }
+  .img-5 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 20%;
+    height: 80%;
+    width: 60%;
+  }
 }
+/* media query from 480px to 768px */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  /* index.html */
+  .grid-container {
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "left left left left left left"
+      "right right right right right right"
+      "middle middle middle middle middle middle"
+      "select1 select1 select1 select2 select2 select2"
+      "select3 select3 select3 select3 select3 select3"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  .home-background {
+    background: url("../images/home-crop.jpg") fixed no-repeat;
+    background-size: cover;
+  }
+  #logo {
+    height: 56%;
+    width: 13%;
+  }
   .text-align-center {
     text-align: center;
     margin: 7px 2%;
@@ -875,49 +801,45 @@ top: 50px;
     bottom: 68px;
     font-size: 97%;
     background-color: #000000bd;
-}
-#the-top {
-  z-index: 4;
-  background: black;
-  color: white;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  position: fixed;
-  text-align: center;
-  padding: 1% 4% 1% 2%;
-  right: 2%;
-  bottom: 15%;
-}
-/* Navigation bar */
-.nav {
-  height: 100%;
-  padding: 1%;
-}
-
-nav > a {
-  border: 3px;
-  width: 20%;
-  padding: 10px;
-  margin: 10px;
-  font-size: 90%;
-}
-.material-symbols-outlined {
-  font-size: 181%;
-}
-/* Info segment */
-  #text-wrap-goal{
-     background-color: #384a3e;
-  border-radius: 10px;
-  width: 99%;
-  height: 97%;
-  position: relative;
-  left: 4px;
-  padding: 8px 23px;
-  top: 3px;
-  font-size: 95%;
- }
- #goal {
+  }
+  #the-top {
+    z-index: 4;
+    background: black;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    padding: 1% 4% 1% 2%;
+    right: 2%;
+    bottom: 15%;
+  }
+  /* Navigation bar */
+  .nav {
+    height: 100%;
+    padding: 1%;
+  }
+  nav > a {
+    border: 3px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 90%;
+  }
+  /* Info segment */
+  #text-wrap-goal {
+    background-color: #384a3e;
+    border-radius: 10px;
+    width: 99%;
+    height: 97%;
+    position: relative;
+    left: 4px;
+    padding: 8px 23px;
+    top: 3px;
+    font-size: 95%;
+  }
+  #goal {
     text-align: justify;
     color: white;
     background-color: #000000d6;
@@ -929,13 +851,13 @@ nav > a {
     width: 88%;
     height: 100%;
     border-radius: 10px;
-}
- #gif-wrap {
+  }
+  #gif-wrap {
     width: 45%;
     height: 74%;
     position: absolute;
-}
-#text-wrap1 {
+  }
+  #text-wrap1 {
     background-color: #384a3e;
     border-radius: 10px;
     width: 99%;
@@ -943,16 +865,16 @@ nav > a {
     padding: 2px 24px 0px 24px;
     font-size: 103%;
     position: unset;
-}
-#info-img {
+  }
+  #info-img {
     border: #000000d6 solid 10px;
     border-radius: 8px;
     position: relative;
     left: 100px;
     height: 84%;
     width: 70%;
-}
-#video {
+  }
+  #video {
     border-radius: 8px;
     border: #000000d6 solid 10px;
     height: 100%;
@@ -960,8 +882,8 @@ nav > a {
     position: unset;
     left: 14px;
     margin-left: 1%;
-}
-#goal-container {
+  }
+  #goal-container {
     text-align: left;
     color: white;
     background-color: #000000d6;
@@ -971,84 +893,79 @@ nav > a {
     height: 100%;
     border-radius: 10px;
     position: unset;
-}
-.contact {
-  grid-area: contact;
-  background-color: #597965;
-  height: 100%;
-  width: 100%;
-  padding: 1%;
-}
-
-/* form.html */
-.grid-container-form {
-display: grid;
-grid-template-areas:
-  "header header header header header header"
-  "nav nav nav nav nav nav"
-  "form form form form form form"
-  "contact contact contact contact contact contact"
-  "map map map map map map"
-  "footer footer footer footer footer footer";
-}    
-/* gallery.html */
-.grid-container-gallery {
-display: grid;
-grid-template-areas:
-  "header header header header header header"
-  "nav nav nav nav nav nav"
-  "img3 img3 img3 img3 img3 img3"
-  "img1 img1 img1 img2 img2 img2"
-  "img4 img4 img4 img4 img4 img4"
-  "img5 img5 img5 img5 img5 img5"
-  "contact contact contact contact contact contact"
-  "map map map map map map"
-  "footer footer footer footer footer footer";}
-
-.img-1 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 25px;
-}
-
-.img-2 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 25px;
-}
-
-.img-3 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left:25%;
-height: 80%;
-width: 51%;
-position: relative;
-top: 50px;
-}
-
-.img-4 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 20%;
-height: 80%;
-width: 60%;
-position: relative;
-top: 50px;
-}
-
-.img-5 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 10px;
-margin-left: 20%;
-height: 80%;
-width: 60%;
-}
+  }
+  .contact {
+    grid-area: contact;
+    background-color: #597965;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+  }
+  /* form.html */
+  .grid-container-form {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "form form form form form form"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  /* gallery.html */
+  .grid-container-gallery {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "img3 img3 img3 img3 img3 img3"
+      "img1 img1 img1 img2 img2 img2"
+      "img4 img4 img4 img4 img4 img4"
+      "img5 img5 img5 img5 img5 img5"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  .img-1 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25px;
+  }
+  .img-2 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25px;
+  }
+  .img-3 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 25%;
+    height: 80%;
+    width: 51%;
+    position: relative;
+    top: 50px;
+  }
+  .img-4 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 20%;
+    height: 80%;
+    width: 60%;
+    position: relative;
+    top: 50px;
+  }
+  .img-5 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 10px;
+    margin-left: 20%;
+    height: 80%;
+    width: 60%;
+  }
 }
 /* Media for max 480px */
 @media all and (max-width: 480px) {
-   /* index.html */
-   .grid-container {
+  /* index.html */
+  .grid-container {
     grid-template-areas:
       "header header header header header header"
       "nav nav nav nav nav nav"
@@ -1062,49 +979,47 @@ width: 60%;
       "map map map map map map"
       "footer footer footer footer footer footer";
   }
-  body{
+  body {
     font-size: 60%;
   }
   .home-background {
-    background: url('../images/home-mobil.jpg') fixed no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-}
+    background: url("../images/home-mobil.jpg") fixed no-repeat;
+    background-size: cover;
+  }
   #logo {
     height: 56%;
     width: 21%;
-}
-#the-top {
-  z-index: 4;
-  background: black;
-  color: white;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  position: fixed;
-  text-align: center;
-  padding: 1% 4% 1% 2%;
-  right: 2%;
-  bottom: 15%;
-}
-/* Navigation bar */
-.nav {
-  height: 100%;
-  padding: 1%;
-  overflow: hidden;
-}
-
-nav > a {
-  border: 3px;
-  width: 20%;
-  padding: 2%;
-  margin: 2%;
-  font-size: 90%;
-}
-.active {
-  text-decoration: underline;
-}
-/* Info segment */
+  }
+  #the-top {
+    z-index: 4;
+    background: black;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    padding: 1% 4% 1% 2%;
+    right: 2%;
+    bottom: 15%;
+  }
+  /* Navigation bar */
+  .nav {
+    height: 100%;
+    padding: 1%;
+    overflow: hidden;
+  }
+  nav > a {
+    border: 3px;
+    width: 20%;
+    padding: 2%;
+    margin: 2%;
+    font-size: 90%;
+  }
+  .active {
+    text-decoration: underline;
+  }
+  /* Info segment */
   .text-align-center {
     text-align: center;
     margin: 7px 3%;
@@ -1113,27 +1028,27 @@ nav > a {
     bottom: 68px;
     font-size: 95%;
     background-color: #000000bd;
-}
-  #text-wrap-goal{
-     background-color: #384a3e;
-  border-radius: 10px;
-  width: 99%;
-  height: 97%;
-  position: relative;
-  left: 4px;
-  padding: 8px 23px;
-  top: 3px;
-  font-size: 95%;
- }
- #goal > h2 {
-  font-size: 150%;
-  font-weight: bold;
-  margin: 1%;
-  background-color: #384a3e;
-  border-radius: 8px;
-  padding: 2%;
-}
- #goal {
+  }
+  #text-wrap-goal {
+    background-color: #384a3e;
+    border-radius: 10px;
+    width: 99%;
+    height: 97%;
+    position: relative;
+    left: 4px;
+    padding: 8px 23px;
+    top: 3px;
+    font-size: 95%;
+  }
+  #goal > h2 {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 1%;
+    background-color: #384a3e;
+    border-radius: 8px;
+    padding: 2%;
+  }
+  #goal {
     text-align: justify;
     color: white;
     background-color: #000000d6;
@@ -1144,13 +1059,13 @@ nav > a {
     width: 88%;
     height: 100%;
     border-radius: 10px;
-}
- #gif-wrap {
+  }
+  #gif-wrap {
     width: 45%;
     height: 74%;
     position: absolute;
-}
-#text-wrap1 {
+  }
+  #text-wrap1 {
     background-color: #384a3e;
     border-radius: 10px;
     width: 99%;
@@ -1158,52 +1073,50 @@ nav > a {
     padding: 2px 24px 0px 24px;
     font-size: 103%;
     position: unset;
-}
-#info-img {
+  }
+  #info-img {
     border: #000000d6 solid 10px;
     border-radius: 8px;
     position: unset;
     margin-left: 8%;
     height: 84%;
     width: 85%;
-
-}
-#facilities {
-  height: auto;
-  margin-left: 8%;
-  position: unset;
-  padding: 2% 0% 2% 2%;
-}
-#text-facilities {
-
-   position: unset;
-  padding: 1% 0% 1% 7%;
-  height: auto;
-}
-.goal-health {
-  position: unset;
-  width: 76%;
-  margin-left: 8%;
-}
-.select2 {
-   margin: 0;
-}
-.select3 {
-  grid-area: select3;
-  background-color: #5979653d;
-  height: 100%;
-  padding: 0px;
-  width: 100%;
-  margin-left: 1%;
-}
-#video {
+  }
+  #facilities {
+    height: auto;
+    margin-left: 8%;
+    position: unset;
+    padding: 2% 0% 2% 2%;
+  }
+  #text-facilities {
+    position: unset;
+    padding: 1% 0% 1% 7%;
+    height: auto;
+  }
+  .goal-health {
+    position: unset;
+    width: 76%;
+    margin-left: 8%;
+  }
+  .select2 {
+    margin: 0;
+  }
+  .select3 {
+    grid-area: select3;
+    background-color: #5979653d;
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+    margin-left: 1%;
+  }
+  #video {
     border: #000000d6 solid 7px;
     height: 100%;
     width: 96%;
     position: unset;
     margin-left: 1%;
-}
-#goal-container {
+  }
+  #goal-container {
     text-align: left;
     color: white;
     background-color: #000000d6;
@@ -1213,88 +1126,92 @@ nav > a {
     height: 100%;
     border-radius: 10px;
     position: unset;
+  }
+  .contact {
+    grid-area: contact;
+    background-color: #597965;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+  }
+  /* form.html */
+  .grid-container-form {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "form form form form form form"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  #form-style {
+    height: 94%;
+    width: 94%;
+    padding: 11px 25px 25px;
+    border-radius: 8px;
+    margin: 25px auto;
+    background-color: #384a3ea3;
+  }
+  /* gallery.html */
+  .grid-container-gallery {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      "img3 img3 img3 img3 img3 img3"
+      "img1 img1 img1 img1 img1 img1"
+      "img2 img2 img2 img2 img2 img2"
+      "img4 img4 img4 img4 img4 img4"
+      "img5 img5 img5 img5 img5 img5"
+      "contact contact contact contact contact contact"
+      "map map map map map map"
+      "footer footer footer footer footer footer";
+  }
+  .img-1 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 7px;
+    margin-left: 25px;
+    height: 100%;
+    width: 90%;
+  }
+  .img-2 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 7px;
+    margin-left: 25px;
+    height: 100%;
+    width: 90%;
+  }
+  .img-3 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 7px;
+    margin-left: 59px;
+    height: 90%;
+    width: 70%;
+    position: unset;
+  }
+  .img-4 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 7px;
+    margin-left: 25px;
+    height: 100%;
+    width: 90%;
+    position: unset;
+  }
+  .img-5 > a > img {
+    border-radius: 5px;
+    border: #000000d6 solid 7px;
+    margin-left: 25px;
+    height: 100%;
+    width: 90%;
+  }
 }
-.contact {
-  grid-area: contact;
-  background-color: #597965;
-  height: 100%;
-  width: 100%;
-  padding: 1%;
+/* Media for more than 1300px */
+@media all and (min-width: 1300px) {
+  #video {
+    width: 100%;
+  }
+  #info-img {
+    width: 100%;
+  }
 }
-
-/* form.html */
-.grid-container-form {
-display: grid;
-grid-template-areas:
-  "header header header header header header"
-  "nav nav nav nav nav nav"
-  "form form form form form form"
-  "contact contact contact contact contact contact"
-  "map map map map map map"
-  "footer footer footer footer footer footer";
-}    
-#form-style {
-  height: 94%;
-  width: 94%;
-  padding: 11px 25px 25px;
-  border-radius: 8px;
-  margin: 25px auto;
-  background-color: #384a3ea3;
-}
-/* gallery.html */
-.grid-container-gallery {
-display: grid;
-grid-template-areas:
-  "header header header header header header"
-  "nav nav nav nav nav nav"
-  "img3 img3 img3 img3 img3 img3"
-  "img1 img1 img1 img1 img1 img1"
-  "img2 img2 img2 img2 img2 img2"
-  "img4 img4 img4 img4 img4 img4"
-  "img5 img5 img5 img5 img5 img5"
-  "contact contact contact contact contact contact"
-  "map map map map map map"
-  "footer footer footer footer footer footer";}
-
-.img-1 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 7px;
-margin-left: 25px;
-height: 100%;
-width: 90%;
-}
-
-.img-2 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 7px;
-margin-left: 25px;
-height: 100%;
-width: 90%;
-}
-
-.img-3 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 7px;
-margin-left: 59px;
-height: 90%;
-width: 70%;
-position: unset;
-}
-
-.img-4 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 7px;
-margin-left: 25px;
-height: 100%;
-width: 90%;
-position: unset;
-}
-
-.img-5 > a > img {
-border-radius: 5px;
-border: #000000d6 solid 7px;
-margin-left: 25px;
-height: 100%;
-width: 90%;
-}
- }
