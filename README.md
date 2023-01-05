@@ -71,7 +71,7 @@ The author designed the website for the customers hoping that all queries about 
   - All of the colors used in the site were tested with [webaim](https://webaim.org/resources/contrastchecker/).
 ## Validator testing
 - Html
-    + No errors were returned when passing through the official [W3C validator.]()
+    + No errors were returned when passing through the official [W3C validator.](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbrianrosenkranz.github.io%2Ffitness-center%2F)
     + No errors were returned when passing through the official [W3C CSS validaotr.][https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbrianrosenkranz.github.io%2Ffitness-center%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en]
 # Deployment.
 
