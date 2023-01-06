@@ -3,13 +3,20 @@
 I have done my project in a Mac 5k retina, creating problems with the #info-img and #video.
  Because of this, I added an media query for a resolution of more than 1300px
 */
-#header-size {
-  width: 50%;
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "left left left left right right"
+    "select1 select1 middle middle right right"
+    "select2 select2 select3 select3 right right"
+    "contact contact contact contact contact contact"
+    "map map map map map map"
+    "footer footer footer footer footer footer";
+  /* grid-column-gap: 10px; - if you want gap between the columns */
 }
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Orbitron', sans-serif;
-*/
 * {
   box-sizing: border-box;
 }
@@ -22,6 +29,9 @@ body {
   margin: 0;
   font-size: 86%;
   letter-spacing: 2px;
+}
+#header-size {
+  width: 50%;
 }
 .home-background {
   background: url("../images/home-full.jpg") fixed no-repeat;
@@ -109,30 +119,7 @@ nav > a {
 .active {
   border-bottom: white 2px solid;
 }
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    "left left left left right right"
-    "select1 select1 middle middle right right"
-    "select2 select2 select3 select3 right right"
-    "contact contact contact contact contact contact"
-    "map map map map map map"
-    "footer footer footer footer footer footer";
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-}
-.grid-container-form {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    "form form form form form form"
-    "contact contact contact contact contact contact"
-    "map map map map map map"
-    "footer footer footer footer footer footer";
-}
+/* Style gallery */
 .grid-container-gallery {
   display: grid;
   grid-template-areas:
@@ -214,20 +201,6 @@ nav > a {
   width: 90%;
   height: 100%;
 }
-.left {
-  grid-area: left;
-  background-color: #5979653d;
-  height: 100%;
-  padding: 10px;
-  width: 100%;
-}
-.middle {
-  grid-area: middle;
-  background-color: #5979653d;
-  height: 100%;
-  padding: 22px 0px 0px 0px;
-  width: 100%;
-}
 .map {
   grid-area: map;
   height: 100%;
@@ -266,7 +239,21 @@ nav > a {
 .get-in-touch > p {
   margin-top: 0.5em;
 }
-#gif-container {
+/* style the info section */
+.left {
+  grid-area: left;
+  background-color: #5979653d;
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+.middle {
+  grid-area: middle;
+  background-color: #5979653d;
+  height: 100%;
+  padding: 22px 0px 0px 0px;
+  width: 100%;
+}#gif-container {
   width: 100%;
   height: 25%;
   padding: 28px 3px 28px;
@@ -422,13 +409,7 @@ nav > a {
   width: 100%;
   margin: 0 0 80px 0;
 }
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: #000000d6;
-  padding: 10px;
-  text-align: center;
-}
+
 .capita {
   text-transform: uppercase;
 }
@@ -444,6 +425,18 @@ nav > a {
   right: 100px;
   top: 20px;
 }
+/* grid container form */
+.grid-container-form {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "form form form form form form"
+    "contact contact contact contact contact contact"
+    "map map map map map map"
+    "footer footer footer footer footer footer";
+}
+/* Formula */
 .form {
   grid-area: form;
   background-color: #5979653d;
@@ -534,6 +527,13 @@ input[type="reset"]:hover {
   color: #000000d6;
   border: 1px solid #000000;
   border-radius: 5px;
+}
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #000000d6;
+  padding: 10px;
+  text-align: center;
 }
 footer {
   text-align: center;
